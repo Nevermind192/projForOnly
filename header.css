@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    background: #18181b;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+.container h1{
+    color: #c5c6c7;
+    font-size: 24px;
+}
+
+.container .btn {
+    padding: 8px 15px;
+    background: #d2d2d6;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.container .btn:hover {
+    background: #9d9d9e;
+}

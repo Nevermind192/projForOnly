@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    margin-left: 3%;
+    align-items: center;
+    min-height: 100vh;
+    background: #18181b;
+}
+
+.wrapper--profile {
+    width: 100%;
+    max-width: 800px;
+    color: #e3e3e3;
+    margin-top: 5%;
+}
+
+.wrapper--profile h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.wrapper--profile p {
+    font-size: 14px;
+    color: #adadb8;
+    margin-bottom: 20px;
+}
+
+.wrapper--profile .form-container {
+    background: #1f1f23;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Контейнер инпутов */
+.wrapper--profile .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wrapper--profile .form-group:last-child {
+    border-bottom: none;
+}
+
+.form-group label {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Поля ввода */
+.form-group input {
+    width: 70%;
+    height: 40px;
+    background: #323239;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+.form-group input:focus {
+    border-color: #9147ff;
+    outline: none;
+}
+
+/* Кнопка сохранения */
+.wrapper--profile .save-btn {
+    display: block;
+    width: 200px;
+    height: 35px;
+    background: #9147ff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: auto;
+    border: none;
+    transition: background 0.2s;
+}
+
+.wrapper--profile .save-btn:hover {
+    background: #772ce8;
+}
+
+.error, .success {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+}
+
+.success {
+    background: rgba(0, 255, 0, 0.2);
+    color: #4caf50;
+    border: 1px solid #4caf50;
+}
